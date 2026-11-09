@@ -35,3 +35,7 @@
 	border-radius: 0 !important;
 }
 .content-panel h1 { letter-spacing: -0.03em; }
+
+/* Playbook: no rounded corners, no shadows, anywhere. */
+*, *::before, *::after { border-radius: 0 !important; }
+:root { --sl-shadow-sm: none; --sl-shadow-md: none; --sl-shadow-lg: none; }

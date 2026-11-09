@@ -19,6 +19,8 @@ export default defineConfig({
 			components: {
 				// Starlight's search button plus the Ask AI dialog.
 				Search: './src/components/Search.astro',
+				// Starlight's footer plus a Powered by OneTag AI line.
+				Footer: './src/components/Footer.astro',
 			},
 			sidebar: [
 				{
