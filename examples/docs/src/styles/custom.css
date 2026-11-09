@@ -39,3 +39,7 @@
 /* Playbook: no rounded corners, no shadows, anywhere. */
 *, *::before, *::after { border-radius: 0 !important; }
 :root { --sl-shadow-sm: none; --sl-shadow-md: none; --sl-shadow-lg: none; }
+
+/* One accent: Starlight's orange / green / purple / red all become the kit blue. */
+:root { --sl-hue-orange: 221; --sl-hue-green: 221; --sl-hue-purple: 221; --sl-hue-red: 221; --sl-hue-blue: 221; }
+.hero { padding-block: 3rem; }
