@@ -1,6 +1,6 @@
 ---
 title: Configuration
-description: Environment variables and the component constants Lantern reads.
+description: Environment variables and the component constants Astro AI Docs reads.
 ---
 
 ## Environment variables
@@ -9,7 +9,7 @@ description: Environment variables and the component constants Lantern reads.
 | --- | --- | --- |
 | `PUBLIC_ONETAG_KEY` | `YOUR_ONETAG_KEY` | The OneTag AI key. Without it the dialog shows a "not set up" message. |
 | `PUBLIC_ONETAG_SITE` | `https://onetagai.com` | Where `v1.js` and the API live. Only needed for self-hosted deployments. |
-| `BASE_PATH` | `/` | Sub-path the site is served from, for example `/astro-docs-ai` on a GitHub project page. |
+| `BASE_PATH` | `/` | Sub-path the site is served from, for example `/astro-ai-docs` on a GitHub project page. |
 
 Variables starting with `PUBLIC_` are read at build time and written into the HTML, which is why This key is designed to be public.
 

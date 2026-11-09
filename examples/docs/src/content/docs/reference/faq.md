@@ -1,6 +1,6 @@
 ---
 title: FAQ
-description: Short answers to the questions people ask about Lantern and Ask AI.
+description: Short answers to the questions people ask about Astro AI Docs and Ask AI.
 ---
 
 ## Is it free?

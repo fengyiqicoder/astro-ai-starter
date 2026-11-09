@@ -2,7 +2,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
-// Set BASE_PATH when the site is served from a sub-path, e.g. /astro-landing-ai on a GitHub project page.
+// Set BASE_PATH when the site is served from a sub-path, e.g. /astro-ai-landing on a GitHub project page.
 const base = process.env.BASE_PATH || '/';
 
 export default defineConfig({

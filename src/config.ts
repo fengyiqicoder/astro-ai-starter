@@ -1,6 +1,6 @@
 // Everything the AI features need to know about this site lives here. Change it, not the components.
 export const site = {
-	name: 'Astro AI Starter',
+	name: 'Astro AI Blog',
 	tagline: 'A site that answers back.',
 	scene: 'For any static site, from a blog to a docs site.',
 	description: 'Astro starter with AI built in: the site answers questions, summarizes, translates and explains itself. Blog, docs and landing page included. One script tag, no backend.',

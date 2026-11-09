@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightLlmsTxt from 'starlight-llms-txt';
 
-// Set BASE_PATH when the site is served from a sub-path, e.g. /astro-docs-ai on a GitHub project page.
+// Set BASE_PATH when the site is served from a sub-path, e.g. /astro-ai-docs on a GitHub project page.
 const base = process.env.BASE_PATH || '/';
 
 export default defineConfig({
@@ -11,10 +11,10 @@ export default defineConfig({
 	base,
 	integrations: [
 		starlight({
-			title: 'Lantern',
+			title: 'Astro AI Docs',
 			description: 'A free Astro docs template with built-in AI Q&A that answers from your own pages.',
-			logo: { src: './src/assets/lantern.svg' },
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/fengyiqicoder/astro-docs-ai' }],
+			logo: { src: './src/assets/ai-docs.svg' },
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/fengyiqicoder/astro-ai-docs' }],
 			customCss: ['./src/styles/custom.css'],
 			components: {
 				// Starlight's search button plus the Ask AI dialog.

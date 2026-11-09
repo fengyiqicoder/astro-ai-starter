@@ -9,13 +9,13 @@ Both are in `astro.config.mjs`:
 
 ```js
 starlight({
-	title: 'Lantern',
-	logo: { src: './src/assets/lantern.svg' },
+	title: 'Astro AI Docs',
+	logo: { src: './src/assets/ai-docs.svg' },
 	social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/you/your-docs' }],
 })
 ```
 
-Replace `src/assets/lantern.svg` with your own file. Starlight shows the logo next to the title; add `replacesTitle: true` to the `logo` object to show only the logo.
+Replace `src/assets/ai-docs.svg` with your own file. Starlight shows the logo next to the title; add `replacesTitle: true` to the `logo` object to show only the logo.
 
 ## Colors
 
@@ -38,4 +38,4 @@ To remove the feature, delete the `components.Search` entry in `astro.config.mjs
 
 ## Everything else
 
-Lantern is a plain Starlight site. The [Starlight docs](https://starlight.astro.build/guides/customization/) cover fonts, custom pages, internationalization and component overrides.
+Astro AI Docs is a plain Starlight site. The [Starlight docs](https://starlight.astro.build/guides/customization/) cover fonts, custom pages, internationalization and component overrides.

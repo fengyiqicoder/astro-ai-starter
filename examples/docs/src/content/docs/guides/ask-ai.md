@@ -12,7 +12,7 @@ The Ask AI dialog is one Astro component, `src/components/Search.astro`. It rend
 3. **Cite.** The titles of the pages that were used appear under the answer as links.
 4. **Follow up.** The last four exchanges are kept as `history`, so "and on Netlify?" works after "how do I deploy to GitHub Pages?".
 
-Nothing is stored on a server. OneTag AI keeps token counts and timestamps, not questions or page text; see its [privacy page](https://onetagai.com/privacy?ref=astro-docs-ai).
+Nothing is stored on a server. OneTag AI keeps token counts and timestamps, not questions or page text; see its [privacy page](https://onetagai.com/privacy?ref=astro-ai-docs).
 
 ## The rules
 
@@ -20,7 +20,7 @@ The model is told to answer only from the pages it was given, to say so when the
 
 ## Limits
 
-One call accepts up to 32,000 characters of text. Lantern uses at most 20,000 for pages so the question and the history always fit. If your pages are very long, lower `PER_PAGE` or `TOP_PAGES` in the component.
+One call accepts up to 32,000 characters of text. Astro AI Docs uses at most 20,000 for pages so the question and the history always fit. If your pages are very long, lower `PER_PAGE` or `TOP_PAGES` in the component.
 
 ## When there is no key
 

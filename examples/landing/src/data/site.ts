@@ -6,7 +6,7 @@ export const site = {
 	tagline: 'Invoicing that fits a one-person business.',
 	description:
 		'Harbor is invoicing software for freelancers and solo consultants: send invoices in your own currency, get paid by card or bank transfer, and see what is owed at a glance.',
-	url: 'https://fengyiqicoder.github.io/astro-landing-ai/',
+	url: 'https://fengyiqicoder.github.io/astro-ai-landing/',
 	nav: [
 		{ label: 'How it works', href: '#how' },
 		{ label: 'Features', href: '#features' },

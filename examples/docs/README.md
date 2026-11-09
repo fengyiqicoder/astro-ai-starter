@@ -1,15 +1,15 @@
-# Lantern
+# Astro AI Docs
 
 Free Astro docs template with built-in AI Q&A that answers from your own pages. Starlight, Pagefind retrieval, OneTag AI, llms.txt, Lighthouse 100, one-click deploy, MIT.
 
-**Live demo:** https://fengyiqicoder.github.io/astro-docs-ai/ · open the **Ask AI** button in the header or press `Ctrl` + `/`.
+**Live demo:** https://fengyiqicoder.github.io/astro-ai-docs/ · open the **Ask AI** button in the header or press `Ctrl` + `/`.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ffengyiqicoder%2Fastro-docs-ai&env=PUBLIC_ONETAG_KEY&envDescription=Free%20key%20from%20onetagai.com&envLink=https%3A%2F%2Fonetagai.com%2F%3Fref%3Dastro-docs-ai&project-name=my-docs&repository-name=my-docs)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/fengyiqicoder/astro-docs-ai)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ffengyiqicoder%2Fastro-ai-docs&env=PUBLIC_ONETAG_KEY&envDescription=Free%20key%20from%20onetagai.com&envLink=https%3A%2F%2Fonetagai.com%2F%3Fref%3Dastro-ai-docs&project-name=my-docs&repository-name=my-docs)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/fengyiqicoder/astro-ai-docs)
 
 ## What it does
 
-A reader types a question. The site searches its own pages with the [Pagefind](https://pagefind.app) index that Starlight already builds, hands the best five pages and the question to [OneTag AI](https://onetagai.com/?ref=astro-docs-ai), and streams the answer back with links to the pages it used. Follow-up questions keep the thread. The whole thing runs in the browser: no backend, no API keys in the code, nothing stored.
+A reader types a question. The site searches its own pages with the [Pagefind](https://pagefind.app) index that Starlight already builds, hands the best five pages and the question to [OneTag AI](https://onetagai.com/?ref=astro-ai-docs), and streams the answer back with links to the pages it used. Follow-up questions keep the thread. The whole thing runs in the browser: no backend, no API keys in the code, nothing stored.
 
 - Answers only from your pages; says so when a question is not covered.
 - Works in any language the reader asks in.
@@ -20,11 +20,11 @@ A reader types a question. The site searches its own pages with the [Pagefind](h
 ## Use it
 
 ```bash
-npm create astro@latest my-docs -- --template fengyiqicoder/astro-docs-ai
+npm create astro@latest my-docs -- --template fengyiqicoder/astro-ai-docs
 cd my-docs && npm install && npm run dev
 ```
 
-Then get a free key. Either at [onetagai.com](https://onetagai.com/?ref=astro-docs-ai), or without leaving the terminal (the key arrives in that inbox; one key per email):
+Then get a free key. Either at [onetagai.com](https://onetagai.com/?ref=astro-ai-docs), or without leaving the terminal (the key arrives in that inbox; one key per email):
 
 ```bash
 curl -X POST https://onetagai.com/api/signup -H "Content-Type: application/json" -d '{"email":"you@example.com"}'
@@ -43,7 +43,7 @@ If an AI coding tool is setting this up for you, it can run that request with yo
 - **GitHub Pages:** the included workflow builds and publishes on every push to `main`. Set Pages source to *GitHub Actions* and add a repository secret `ONETAG_KEY`.
 - **Vercel / Netlify:** the buttons above, with `PUBLIC_ONETAG_KEY` as an environment variable.
 
-Full docs, written as the demo content: [Getting started](https://fengyiqicoder.github.io/astro-docs-ai/guides/getting-started/), [How Ask AI works](https://fengyiqicoder.github.io/astro-docs-ai/guides/ask-ai/), [Deploy](https://fengyiqicoder.github.io/astro-docs-ai/guides/deploy/).
+Full docs, written as the demo content: [Getting started](https://fengyiqicoder.github.io/astro-ai-docs/guides/getting-started/), [How Ask AI works](https://fengyiqicoder.github.io/astro-ai-docs/guides/ask-ai/), [Deploy](https://fengyiqicoder.github.io/astro-ai-docs/guides/deploy/).
 
 ## Project layout
 
@@ -57,7 +57,7 @@ astro.config.mjs              title, logo, sidebar, the Search override, llms.tx
 
 ## See also
 
-- [Pitch](https://github.com/fengyiqicoder/astro-landing-ai): the matching landing page template, with a fit check and an ask-the-page box.
+- [Astro AI Landing Page](https://github.com/fengyiqicoder/astro-ai-landing): the matching landing page template, with a fit check and an ask-the-page box.
 - [Static AI Block](https://github.com/fengyiqicoder/static-ai-block): twelve copy-paste AI blocks for any static page.
 - [starlight-onetag](https://github.com/fengyiqicoder/starlight-onetag): the Ask AI dialog from this template as a Starlight plugin for existing sites.
 

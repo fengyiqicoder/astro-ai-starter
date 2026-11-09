@@ -18,7 +18,7 @@ description: Publish the site to GitHub Pages, Vercel or Netlify.
 
 ## Sidebar
 
-The sidebar is defined in `astro.config.mjs`. Lantern lists the guides by hand and auto-generates the reference section from the folder:
+The sidebar is defined in `astro.config.mjs`. Astro AI Docs lists the guides by hand and auto-generates the reference section from the folder:
 
 ```js
 sidebar: [

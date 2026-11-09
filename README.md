@@ -98,8 +98,8 @@ The root of this repo is the blog. Two complete sites live in `examples/`, each 
 | Site | What it is | Demo | Start from it |
 | --- | --- | --- | --- |
 | Blog (root) | Posts with TL;DR, translate, ask the author, read next, quiz | [/](https://starter.onetagai.com/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter` |
-| Docs (`examples/docs`, "Lantern") | Starlight docs with an Ask AI dialog that answers from your own pages via the Pagefind index | [/docs/](https://starter.onetagai.com/docs/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter/examples/docs` |
-| Landing page (`examples/landing`, "Pitch") | A product page with a fit check in the hero and an ask-the-page FAQ | [/landing/](https://starter.onetagai.com/landing/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter/examples/landing` |
+| Docs (`examples/docs`, "Astro AI Docs") | Starlight docs with an Ask AI dialog that answers from your own pages via the Pagefind index | [/docs/](https://starter.onetagai.com/docs/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter/examples/docs` |
+| Landing page (`examples/landing`, "Astro AI Landing Page") | A product page with a fit check in the hero and an ask-the-page FAQ | [/landing/](https://starter.onetagai.com/landing/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter/examples/landing` |
 
 ## Project structure
 
@@ -114,8 +114,8 @@ The root of this repo is the blog. Two complete sites live in `examples/`, each 
 │   └── styles/global.css    # design tokens and kit
 ├── scripts/                 # ai-meta.mjs, ai-alt.mjs
 ├── examples/
-│   ├── docs/                # Lantern: Starlight docs with Ask AI
-│   └── landing/             # Pitch: landing page with fit check
+│   ├── docs/                # Astro AI Docs: Starlight docs with Ask AI
+│   └── landing/             # Astro AI Landing Page: landing page with fit check
 ├── public/
 └── .github/workflows/deploy.yml
 ```

@@ -1,14 +1,14 @@
 ---
 title: Getting started
-description: Create a site from the Lantern template, run it locally and add your OneTag AI key.
+description: Create a site from the Astro AI Docs template, run it locally and add your OneTag AI key.
 ---
 
-Lantern is a [Starlight](https://starlight.astro.build) site with one extra component: an **Ask AI** button in the header that answers questions from the pages on the site.
+Astro AI Docs is a [Starlight](https://starlight.astro.build) site with one extra component: an **Ask AI** button in the header that answers questions from the pages on the site.
 
 ## Create a site
 
 ```bash
-npm create astro@latest my-docs -- --template fengyiqicoder/astro-docs-ai
+npm create astro@latest my-docs -- --template fengyiqicoder/astro-ai-docs
 cd my-docs
 npm install
 npm run dev
@@ -18,7 +18,7 @@ Open `http://localhost:4321`. The site runs without any key; the Ask AI dialog t
 
 ## Add your key
 
-1. Get a free key. Fill in your email at [onetagai.com](https://onetagai.com/?ref=astro-docs-ai), or POST it from the terminal; either way the key arrives in that inbox, one key per email:
+1. Get a free key. Fill in your email at [onetagai.com](https://onetagai.com/?ref=astro-ai-docs), or POST it from the terminal; either way the key arrives in that inbox, one key per email:
 
    ```bash
    curl -X POST https://onetagai.com/api/signup -H "Content-Type: application/json" -d '{"email":"you@example.com"}'

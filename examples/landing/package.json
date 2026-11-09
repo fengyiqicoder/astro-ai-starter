@@ -1,5 +1,5 @@
 {
-  "name": "astro-landing-ai",
+  "name": "astro-ai-landing",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -13,11 +13,11 @@
     "astro": "7.4.1",
     "tailwindcss": "^4.3.5"
   },
-  "description": "Pitch: a free Astro landing page template with built-in AI. Visitors ask the page and check whether the product fits them; answers come from the page's own copy. Tailwind 4, OneTag AI, Lighthouse 100, one-click deploy, MIT.",
+  "description": "Astro AI Landing Page: a free Astro landing page template with built-in AI. Visitors ask the page and check whether the product fits them; answers come from the page's own copy. Tailwind 4, OneTag AI, Lighthouse 100, one-click deploy, MIT.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fengyiqicoder/astro-landing-ai"
+    "url": "https://github.com/fengyiqicoder/astro-ai-landing"
   },
   "keywords": [
     "astro",
