@@ -12,8 +12,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 	<section>
 		<div class="hero">
 			<div>
-				<h1><span class="light">{site.tagline}</span>{site.name}</h1>
-				<p class="lead">{site.author.bio} Every post here can summarize itself, translate itself and answer your questions, from the browser, with no backend behind it.</p>
+				<h1><span class="light">{site.scene}</span>{site.tagline}</h1>
+				<p class="lead">An Astro starter with AI built in. Every page can summarize itself, translate itself and answer your questions, from the browser, with no backend behind it. This demo is the blog; docs and landing page come in the same repo.</p>
 				<nav class="bar" aria-label="Start">
 					<a href={`${base}/blog/`}>Read the blog</a>
 					<a href={site.repo}>Use this starter</a>

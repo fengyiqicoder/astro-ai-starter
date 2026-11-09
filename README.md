@@ -1,10 +1,10 @@
-# Starter for Astro 7, Tailwind CSS 4 and AI features that run without a backend.
+# Starter and Boilerplate for Astro 7, Tailwind CSS 4 and TypeScript, with AI built in.
 
-<p align="center"><a href="https://fengyiqicoder.github.io/astro-ai-starter/"><img src=".github/assets/banner.png" alt="Astro AI Starter: a blog that answers back" width="100%"></a></p>
+<p align="center"><a href="https://fengyiqicoder.github.io/astro-ai-starter/"><img src=".github/assets/banner.png" alt="Astro AI Starter: a site that answers back" width="100%"></a></p>
 
-🚀 Astro blog starter with AI built in: ask the blog, TL;DR, translate in place, ask the author, read next, explain any selection or code block, all from the browser with one script tag and no server ⚡️ Made with developer experience first: Astro 7 + Tailwind CSS 4 + TypeScript + MDX + Pagefind + llms.txt + AGENTS.md + GitHub Actions ✨
+🚀 Astro starter with AI built in: the site answers questions, summarizes, translates and explains itself. Blog, docs and landing page included. One script tag, no backend ⚡️ Made with developer experience first: Astro 7 + Tailwind CSS 4 + TypeScript + MDX + Pagefind + llms.txt + AGENTS.md + GitHub Actions ✨
 
-Clone it and you have a blog where every post can summarize itself, translate itself and answer questions. Live demo: [fengyiqicoder.github.io/astro-ai-starter](https://fengyiqicoder.github.io/astro-ai-starter/).
+Clone it and you have a site that answers back: every page can summarize itself, translate itself and answer questions. Live demo: [fengyiqicoder.github.io/astro-ai-starter](https://fengyiqicoder.github.io/astro-ai-starter/).
 
 ```sh
 npm create astro@latest -- --template fengyiqicoder/astro-ai-starter

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Astro starter with AI built in: ask the blog, TL;DR, translate, ask the author, all from the browser with one script tag, no backend.",
+  "description": "Astro starter with AI built in: the site answers questions, summarizes, translates and explains itself. Blog, docs and landing page included. One script tag, no backend.",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
