@@ -1,6 +1,6 @@
 # Starter and Boilerplate for Astro 7, Tailwind CSS 4 and TypeScript, with AI built in.
 
-<p align="center"><a href="https://fengyiqicoder.github.io/astro-ai-starter/"><img src=".github/assets/banner.png" alt="Astro AI Starter: a site that answers back" width="100%"></a></p>
+<p align="center"><a href="https://fengyiqicoder.github.io/astro-ai-starter/"><img src=".github/assets/demo.gif" alt="Pressing TL;DR on a post: a three-sentence summary streams in" width="100%"></a></p>
 
 🚀 Astro starter with AI built in: the site answers questions, summarizes, translates and explains itself. Blog, docs and landing page included. One script tag, no backend ⚡️ Made with developer experience first: Astro 7 + Tailwind CSS 4 + TypeScript + MDX + Pagefind + llms.txt + AGENTS.md + GitHub Actions ✨
 

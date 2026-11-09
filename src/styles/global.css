@@ -16,6 +16,8 @@
 	--ok: #0a7d4f;
 	--error: #c2261f;
 	--grid: rgba(11, 16, 32, 0.045);
+	--button: #0b5fff;
+	--button-hover: #0747c2;
 	--code-bg: #0b1020;
 	--code-fg: #e8edf7;
 	--mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
@@ -37,6 +39,8 @@
 	--ok: #4cc38a;
 	--error: #ff6b6b;
 	--grid: rgba(232, 237, 247, 0.06);
+	--button: #0b5fff;
+	--button-hover: #2f74ff;
 	--code-bg: #121a30;
 	--code-fg: #e8edf7;
 	color-scheme: dark;
@@ -88,8 +92,8 @@ main > h1, .page-title { margin-top: 48px; margin-bottom: 24px; font-size: 48px;
 .icon-button svg { width: 18px; height: 18px; }
 
 /* Buttons */
-.button, button.primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 48px; padding: 0 24px; font: 600 15px/1 var(--sans); color: #fff; background: var(--blue); border: 1px solid var(--blue); border-radius: 0; cursor: pointer; white-space: nowrap; }
-.button:hover, button.primary:hover { background: var(--blue-dark); border-color: var(--blue-dark); text-decoration: none; }
+.button, button.primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 48px; padding: 0 24px; font: 600 15px/1 var(--sans); color: #fff; background: var(--button); border: 1px solid var(--button); border-radius: 0; cursor: pointer; white-space: nowrap; }
+.button:hover, button.primary:hover { background: var(--button-hover); border-color: var(--button-hover); text-decoration: none; }
 .button.secondary, button.secondary { color: var(--text); background: var(--paper); border-color: var(--line-strong); }
 .button.secondary:hover, button.secondary:hover { background: var(--blue-soft); }
 .button.small, button.small { height: 36px; padding: 0 16px; font-size: 14px; }
