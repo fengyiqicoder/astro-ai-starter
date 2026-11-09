@@ -6,5 +6,5 @@ import { site } from '../data/site';
 	<nav aria-label="Main" class="hidden items-center gap-7 text-[15px] text-ink-soft md:flex">
 		{site.nav.map((n) => <a href={n.href} class="hover:text-ink">{n.label}</a>)}
 	</nav>
-	<a href={site.cta.href} class="rounded-none bg-ink px-4 py-2 text-sm font-semibold text-paper hover:bg-glass-deep">{site.cta.label}</a>
+	<a href={site.cta.href} class="rounded-none bg-glass px-4 py-2 text-sm font-semibold text-white hover:bg-glass-deep">{site.cta.label}</a>
 </header>
