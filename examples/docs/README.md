@@ -36,7 +36,7 @@ Put it in `.env`:
 PUBLIC_ONETAG_KEY=ot_your_key_here
 ```
 
-If an AI coding tool is setting this up for you, it can run that request with your email and ask you to paste the key from your inbox. Without a key the site works as a normal Starlight site; the Ask AI dialog just says it is not set up yet. The key is public by design, like an analytics ID: it can only spend that account's allowance of 1,000,000 free tokens.
+If an AI coding tool is setting this up for you, it can run that request with your email and ask you to paste the key from your inbox. Without a key the site works as a normal Starlight site; the Ask AI dialog just says it is not set up yet. This key is designed to be public, like an analytics ID: it can only spend that account's allowance of 1,000,000 free tokens.
 
 ## Deploy
 

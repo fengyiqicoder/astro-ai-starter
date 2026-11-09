@@ -1,5 +1,6 @@
 // Loads the OneTag AI SDK on first use, so it never affects page load. Both AI features share it.
 // The key comes from PUBLIC_ONETAG_KEY (see .env.example for how to get one with a single curl).
+// This key is designed to be public: it ships in the HTML like an analytics ID and can only spend this account's allowance.
 declare global {
 	interface Window {
 		onetag?: any;

@@ -3,7 +3,7 @@
 This is an Astro 7 blog starter with AI features that run in the reader's browser through OneTag AI (public key, no backend). Read https://onetagai.com/llms.txt for the API.
 
 - Posts: `src/content/blog/*.mdx`, schema in `src/content.config.ts`. Frontmatter needs `title`, `description`, `date`.
-- Site settings and the author persona: `src/config.ts`. The key comes from `PUBLIC_ONETAG_KEY` in `.env` (public by design).
+- Site settings and the author persona: `src/config.ts`. The key comes from `PUBLIC_ONETAG_KEY` in `.env` (designed to be public).
 - Each AI feature is one component in `src/components/` with a custom element and one `ask()` call from `src/scripts/ai.ts`. New features copy `ReadNext.astro`. Always handle the no-key case with `errorText({ code: 'no_key' })`.
 - Styles: tokens at the top of `src/styles/global.css`. Keep square corners, 1px hairlines, system fonts, one accent color, 12px spacing unit. Dark mode uses `:root[data-theme='dark']`.
 - Commands: `npm run dev`, `npm run build` (also builds the Pagefind index), `npm run ai:meta -- --dry`, `npm run ai:alt -- --dry`.

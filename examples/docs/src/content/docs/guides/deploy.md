@@ -3,7 +3,7 @@ title: Deploy
 description: Publish the site to GitHub Pages with the included workflow, or to Vercel and Netlify with one click.
 ---
 
-The site is static output in `dist/`. Any static host works. The key goes in as an environment variable at build time.
+The site is static output in `dist/`. Any static host works. The key goes in as an environment variable at build time. This key is designed to be public: it ends up in the built HTML like an analytics ID and can only spend your account's allowance, so a build-time variable is enough.
 
 ## GitHub Pages
 

@@ -1,5 +1,6 @@
 // Loads the OneTag SDK the first time an AI feature is used, so pages ship no extra script by default.
 // The key and site come from data attributes on <html>, set by the layout from src/config.ts.
+// This key is designed to be public: it ships in the HTML like an analytics ID and can only spend this account's allowance.
 declare global {
 	interface Window {
 		onetag?: { ask: (prompt: string, input?: unknown, options?: Record<string, unknown>) => Promise<any>; OneTagError: any };

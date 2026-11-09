@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 
+// This key is designed to be public: the same one that ships in the site's HTML. Free key: https://onetagai.com
 const KEY = process.env.PUBLIC_ONETAG_KEY || (await readEnv('PUBLIC_ONETAG_KEY'));
 const SITE = process.env.PUBLIC_ONETAG_SITE || 'https://onetagai.com';
 

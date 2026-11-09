@@ -19,7 +19,7 @@ export const site = {
 		{ href: '/about/', label: 'About' },
 	],
 	ai: {
-		// Public by design: it ends up in the HTML like an analytics ID and can only spend this account's allowance.
+		// This key is designed to be public: it ends up in the HTML like an analytics ID and can only spend this account's allowance.
 		// Get a free one (1,000,000 tokens per account) at https://onetagai.com or:
 		//   curl -X POST https://onetagai.com/api/signup -H "Content-Type: application/json" -d '{"email":"you@example.com"}'
 		// Put the key in .env as PUBLIC_ONETAG_KEY, or paste it here.

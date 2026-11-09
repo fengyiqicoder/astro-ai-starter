@@ -36,7 +36,7 @@ An AI coding tool can run that request with your email and ask you to paste the 
 PUBLIC_ONETAG_KEY=ot_your_key_here
 ```
 
-Without a key the page works as a normal landing page; the two AI features show a short "not set up" message. The key is public by design, like an analytics ID: it can only spend that account's allowance of 1,000,000 free tokens.
+Without a key the page works as a normal landing page; the two AI features show a short "not set up" message. This key is designed to be public, like an analytics ID: it can only spend that account's allowance of 1,000,000 free tokens.
 
 3. Point the email form at your form service: `contact.endpoint` in `site.ts`.
 

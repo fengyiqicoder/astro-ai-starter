@@ -33,7 +33,7 @@ PUBLIC_ONETAG_KEY=ot_your_key_here
 
 3. Restart `npm run dev`. Open the dialog with the button or with `Ctrl` + `/`.
 
-The key is public by design: it ends up in the built HTML, like any analytics ID. Every account has an allowance of 1,000,000 tokens; the dialog shows a plain message when it is used up.
+This key is designed to be public: it ends up in the built HTML, like any analytics ID. Every account has an allowance of 1,000,000 tokens; the dialog shows a plain message when it is used up.
 
 ## Build
 

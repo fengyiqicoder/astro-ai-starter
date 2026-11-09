@@ -13,7 +13,7 @@ Yes. The site, the search and the llms.txt all work. Only the Ask AI dialog show
 
 ## Is my key safe in the HTML?
 
-The key is public by design, like an analytics ID. Anyone who copies it can spend that account's allowance, and that is the whole risk: it cannot read your data or change your site. Keys are tied to an email address; paid plans can restrict a key to a domain.
+This key is designed to be public, like an analytics ID. Anyone who copies it can spend that account's allowance, and that is the whole risk: it cannot read your data or change your site. Keys are tied to an email address; paid plans can restrict a key to a domain.
 
 ## Which model answers?
 

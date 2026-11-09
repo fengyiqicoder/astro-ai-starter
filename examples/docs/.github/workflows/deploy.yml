@@ -19,6 +19,7 @@ jobs:
         uses: withastro/action@v6
         env:
           # Add your key as a repository secret named ONETAG_KEY (Settings → Secrets and variables → Actions).
+          # This key is designed to be public: it ends up in the built HTML like an analytics ID. The secret only keeps it out of the repo history.
           # No key yet? POST your email and it arrives in your inbox:
           #   curl -X POST https://onetagai.com/api/signup -H "Content-Type: application/json" -d '{"email":"you@example.com"}'
           # Free: 1,000,000 tokens per account. One key per email; posting again re-sends the same key.

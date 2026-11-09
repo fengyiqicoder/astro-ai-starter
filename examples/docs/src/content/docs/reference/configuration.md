@@ -11,7 +11,7 @@ description: Environment variables and the component constants Lantern reads.
 | `PUBLIC_ONETAG_SITE` | `https://onetagai.com` | Where `v1.js` and the API live. Only needed for self-hosted deployments. |
 | `BASE_PATH` | `/` | Sub-path the site is served from, for example `/astro-docs-ai` on a GitHub project page. |
 
-Variables starting with `PUBLIC_` are read at build time and written into the HTML, which is why the key is public by design.
+Variables starting with `PUBLIC_` are read at build time and written into the HTML, which is why This key is designed to be public.
 
 ## Component constants
 

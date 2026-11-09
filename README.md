@@ -87,7 +87,7 @@ curl -X POST https://onetagai.com/api/signup -H "Content-Type: application/json"
 echo 'PUBLIC_ONETAG_KEY=ot_...' > .env
 ```
 
-The key is public by design: it ends up in the HTML like an analytics ID and can only spend your account's allowance. On GitHub Pages, add it as the `ONETAG_KEY` Actions secret.
+This key is designed to be public: it ends up in the HTML like an analytics ID and can only spend your account's allowance. On GitHub Pages, add it as the `ONETAG_KEY` Actions secret.
 
 Need more than the free 1,000,000 tokens? [OneTag Pro](https://onetagai.com/?ref=astro-ai-starter#pricing) is $9.9/month for 100,000,000 tokens and lets you lock the key to your domain.
 
