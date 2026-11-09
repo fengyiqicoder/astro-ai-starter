@@ -4,7 +4,7 @@ export const site = {
 	tagline: 'A site that answers back.',
 	scene: 'For any static site, from a blog to a docs site.',
 	description: 'Astro starter with AI built in: the site answers questions, summarizes, translates and explains itself. Blog, docs and landing page included. One script tag, no backend.',
-	url: 'https://fengyiqicoder.github.io/astro-ai-starter/',
+	url: 'https://starter.onetagai.com/',
 	repo: 'https://github.com/fengyiqicoder/astro-ai-starter',
 	language: 'en',
 	author: {

@@ -25,18 +25,19 @@ jobs:
           # Set ONETAG_KEY in the repo's Actions secrets. Without it the site builds as a normal blog.
           # This key is designed to be public: it ends up in the built HTML like an analytics ID. The secret only keeps it out of the repo history.
           PUBLIC_ONETAG_KEY: ${{ secrets.ONETAG_KEY }}
-          BASE_PATH: /${{ github.event.repository.name }}
-          SITE_URL: https://${{ github.repository_owner }}.github.io
+          # Served at the custom domain in public/CNAME, so the site lives at the root.
+          BASE_PATH: /
+          SITE_URL: https://starter.onetagai.com
       # The two example sites deploy under /docs/ and /landing/ of the same Pages site.
       - name: Build examples
         run: |
           for ex in docs landing; do
-            (cd examples/$ex && npm ci && BASE_PATH=/${{ github.event.repository.name }}/$ex npm run build && mkdir -p ../../dist/$ex && cp -R dist/. ../../dist/$ex/)
+            (cd examples/$ex && npm ci && BASE_PATH=/$ex npm run build && mkdir -p ../../dist/$ex && cp -R dist/. ../../dist/$ex/)
           done
         env:
           # Same key as above. This key is designed to be public.
           PUBLIC_ONETAG_KEY: ${{ secrets.ONETAG_KEY }}
-          SITE_URL: https://${{ github.repository_owner }}.github.io
+          SITE_URL: https://starter.onetagai.com
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

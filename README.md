@@ -1,10 +1,10 @@
 # Starter and Boilerplate for Astro 7, Tailwind CSS 4 and TypeScript, with AI built in.
 
-<p align="center"><a href="https://fengyiqicoder.github.io/astro-ai-starter/"><img src=".github/assets/demo.gif" alt="Pressing TL;DR on a post: a three-sentence summary streams in" width="100%"></a></p>
+<p align="center"><a href="https://starter.onetagai.com/"><img src=".github/assets/demo.gif" alt="Pressing TL;DR on a post: a three-sentence summary streams in" width="100%"></a></p>
 
 🚀 Astro starter with AI built in: the site answers questions, summarizes, translates and explains itself. Blog, docs and landing page included. One script tag, no backend ⚡️ Made with developer experience first: Astro 7 + Tailwind CSS 4 + TypeScript + MDX + Pagefind + llms.txt + AGENTS.md + GitHub Actions ✨
 
-Clone it and you have a site that answers back: every page can summarize itself, translate itself and answer questions. Live demo: [fengyiqicoder.github.io/astro-ai-starter](https://fengyiqicoder.github.io/astro-ai-starter/).
+Clone it and you have a site that answers back: every page can summarize itself, translate itself and answer questions. Live demo: [starter.onetagai.com](https://starter.onetagai.com/).
 
 ```sh
 npm create astro@latest -- --template fengyiqicoder/astro-ai-starter
@@ -97,9 +97,9 @@ The root of this repo is the blog. Two complete sites live in `examples/`, each 
 
 | Site | What it is | Demo | Start from it |
 | --- | --- | --- | --- |
-| Blog (root) | Posts with TL;DR, translate, ask the author, read next, quiz | [/](https://fengyiqicoder.github.io/astro-ai-starter/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter` |
-| Docs (`examples/docs`, "Lantern") | Starlight docs with an Ask AI dialog that answers from your own pages via the Pagefind index | [/docs/](https://fengyiqicoder.github.io/astro-ai-starter/docs/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter/examples/docs` |
-| Landing page (`examples/landing`, "Pitch") | A product page with a fit check in the hero and an ask-the-page FAQ | [/landing/](https://fengyiqicoder.github.io/astro-ai-starter/landing/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter/examples/landing` |
+| Blog (root) | Posts with TL;DR, translate, ask the author, read next, quiz | [/](https://starter.onetagai.com/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter` |
+| Docs (`examples/docs`, "Lantern") | Starlight docs with an Ask AI dialog that answers from your own pages via the Pagefind index | [/docs/](https://starter.onetagai.com/docs/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter/examples/docs` |
+| Landing page (`examples/landing`, "Pitch") | A product page with a fit check in the hero and an ask-the-page FAQ | [/landing/](https://starter.onetagai.com/landing/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter/examples/landing` |
 
 ## Project structure
 
