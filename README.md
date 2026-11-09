@@ -91,6 +91,16 @@ The key is public by design: it ends up in the HTML like an analytics ID and can
 
 Need more than the free 1,000,000 tokens? [OneTag Pro](https://onetagai.com/?ref=astro-ai-starter#pricing) is $9.9/month for 100,000,000 tokens and lets you lock the key to your domain.
 
+## Blog, docs and landing page
+
+The root of this repo is the blog. Two complete sites live in `examples/`, each its own Astro project with the same AI wiring and the same design tokens:
+
+| Site | What it is | Demo | Start from it |
+| --- | --- | --- | --- |
+| Blog (root) | Posts with TL;DR, translate, ask the author, read next, quiz | [/](https://fengyiqicoder.github.io/astro-ai-starter/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter` |
+| Docs (`examples/docs`, "Lantern") | Starlight docs with an Ask AI dialog that answers from your own pages via the Pagefind index | [/docs/](https://fengyiqicoder.github.io/astro-ai-starter/docs/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter/examples/docs` |
+| Landing page (`examples/landing`, "Pitch") | A product page with a fit check in the hero and an ask-the-page FAQ | [/landing/](https://fengyiqicoder.github.io/astro-ai-starter/landing/) | `npm create astro@latest -- --template fengyiqicoder/astro-ai-starter/examples/landing` |
+
 ## Project structure
 
 ```
@@ -103,6 +113,9 @@ Need more than the free 1,000,000 tokens? [OneTag Pro](https://onetagai.com/?ref
 │   ├── pages/               # index, blog, tags, rss, llms.txt
 │   └── styles/global.css    # design tokens and kit
 ├── scripts/                 # ai-meta.mjs, ai-alt.mjs
+├── examples/
+│   ├── docs/                # Lantern: Starlight docs with Ask AI
+│   └── landing/             # Pitch: landing page with fit check
 ├── public/
 └── .github/workflows/deploy.yml
 ```
