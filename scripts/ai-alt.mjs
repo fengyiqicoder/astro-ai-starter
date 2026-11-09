@@ -12,6 +12,7 @@ import { mkdir } from 'node:fs/promises';
 
 requireKey();
 const dry = process.argv.includes('--dry');
+// This key is designed to be public: the same one that ships in the site's HTML.
 const KEY = process.env.PUBLIC_ONETAG_KEY || (await readFile(new URL('../.env', import.meta.url), 'utf8').catch(() => '')).match(/^PUBLIC_ONETAG_KEY=(.*)$/m)?.[1]?.trim();
 const SITE = 'https://onetagai.com';
 const root = fileURLToPath(new URL('..', import.meta.url));

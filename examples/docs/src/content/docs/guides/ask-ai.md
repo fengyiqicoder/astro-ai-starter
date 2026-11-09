@@ -24,4 +24,4 @@ One call accepts up to 32,000 characters of text. Lantern uses at most 20,000 fo
 
 ## When there is no key
 
-Without `PUBLIC_ONETAG_KEY` the button still shows, and the dialog explains that Ask AI is not set up on this site. The rest of the site, the search included, works exactly as before. If you do not want the button at all, remove the `components.Search` line from `astro.config.mjs`.
+Without `PUBLIC_ONETAG_KEY` (this key is designed to be public: it ships in the HTML like an analytics ID) the button still shows, and the dialog explains that Ask AI is not set up on this site. The rest of the site, the search included, works exactly as before. If you do not want the button at all, remove the `components.Search` line from `astro.config.mjs`.
