@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightLlmsTxt from 'starlight-llms-txt';
+import starlightOnetag from 'starlight-onetag';
 
 // Set BASE_PATH when the site is served from a sub-path, e.g. /astro-ai-docs on a GitHub project page.
 const base = process.env.BASE_PATH || '/';
@@ -17,8 +18,6 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/fengyiqicoder/astro-ai-docs' }],
 			customCss: ['./src/styles/custom.css'],
 			components: {
-				// Starlight's search button plus the Ask AI dialog.
-				Search: './src/components/Search.astro',
 				// Starlight's footer plus a Powered by OneTag AI line.
 				Footer: './src/components/Footer.astro',
 			},
@@ -35,7 +34,14 @@ export default defineConfig({
 				},
 				{ label: 'Reference', items: [{ autogenerate: { directory: 'reference' } }] },
 			],
-			plugins: [starlightLlmsTxt()],
+			plugins: [
+				// The Ask AI button and dialog next to the search box. The key comes from PUBLIC_ONETAG_KEY.
+				starlightOnetag({
+					placeholder: 'How do I deploy this to GitHub Pages?',
+					site: process.env.PUBLIC_ONETAG_SITE,
+				}),
+				starlightLlmsTxt(),
+			],
 		}),
 	],
 });

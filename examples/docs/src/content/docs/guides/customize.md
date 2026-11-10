@@ -27,14 +27,14 @@ See [Writing content](/guides/writing-content/#sidebar).
 
 ## The Ask AI button
 
-The button and dialog are in `src/components/Search.astro`. Things people usually change:
+The button and dialog come from the [starlight-onetag](https://github.com/fengyiqicoder/starlight-onetag) plugin. Things people usually change, all as options of `starlightOnetag({ ... })` in `astro.config.mjs`:
 
-- The placeholder question in the input.
-- `RULES`, the instructions given to the model.
-- `TOP_PAGES` and `PER_PAGE`, how much text is retrieved.
-- The keyboard shortcut (`Ctrl` + `/`).
+- `placeholder`, the example question in the input.
+- `rules`, the instructions given to the model.
+- `topPages` and `perPage`, how much text is retrieved.
+- `label`, the button text.
 
-To remove the feature, delete the `components.Search` entry in `astro.config.mjs`. Starlight falls back to its default search button.
+To remove the feature, delete `starlightOnetag()` from `plugins` in `astro.config.mjs`. Starlight falls back to its default search button.
 
 ## Everything else
 

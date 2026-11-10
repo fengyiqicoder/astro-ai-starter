@@ -5,7 +5,7 @@ description: Short answers to the questions people ask about Astro AI Docs and A
 
 ## Is it free?
 
-The template is MIT licensed. OneTag AI gives every account 1,000,000 tokens for free; a question that reads five pages costs roughly 5,000 to 8,000 tokens, so that is around 150 questions. A paid plan with a monthly allowance exists for busier sites.
+The template is MIT licensed. OneTag AI gives every account 1,000,000 tokens a month for free; a question that reads five pages costs roughly 5,000 to 8,000 tokens, so that is around 150 questions a month. A paid plan with a larger allowance exists for busier sites.
 
 ## Does it work without a key?
 
@@ -29,4 +29,4 @@ No. The AI script is loaded the first time someone opens the dialog. Before that
 
 ## Can I use this outside Starlight?
 
-The same approach works on any static site that has a Pagefind index: Astro, Hugo, Eleventy, Jekyll. The component in `src/components/Search.astro` is plain browser code apart from the Starlight wrapper.
+The same approach works on any static site that has a Pagefind index: Astro, Hugo, Eleventy, Jekyll. The dialog in [starlight-onetag](https://github.com/fengyiqicoder/starlight-onetag) is plain browser code apart from the Starlight wrapper, and [astro-onetag](https://www.npmjs.com/package/astro-onetag) is the same idea as a component for any Astro site.

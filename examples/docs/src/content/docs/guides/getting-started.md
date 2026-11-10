@@ -3,7 +3,7 @@ title: Getting started
 description: Create a site from the Astro AI Docs template, run it locally and add your OneTag AI key.
 ---
 
-Astro AI Docs is a [Starlight](https://starlight.astro.build) site with one extra component: an **Ask AI** button in the header that answers questions from the pages on the site.
+Astro AI Docs is a [Starlight](https://starlight.astro.build) site with one extra plugin: an **Ask AI** button in the header that answers questions from the pages on the site.
 
 ## Create a site
 
@@ -14,9 +14,9 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:4321`. The site runs without any key; the Ask AI dialog tells readers it is not set up yet until you add one.
+Open `http://localhost:4321` and click **Ask AI**. On localhost it answers without any key, using a shared demo key. A deployed site needs its own.
 
-## Add your key
+## Add your key before you deploy
 
 1. Get a free key. Fill in your email at [onetagai.com](https://onetagai.com/?ref=astro-ai-docs), or POST it from the terminal; either way the key arrives in that inbox, one key per email:
 
@@ -33,7 +33,7 @@ PUBLIC_ONETAG_KEY=ot_your_key_here
 
 3. Restart `npm run dev`. Open the dialog with the button or with `Ctrl` + `/`.
 
-This key is designed to be public: it ends up in the built HTML, like any analytics ID. Every account has an allowance of 1,000,000 tokens; the dialog shows a plain message when it is used up.
+This key is designed to be public: it ends up in the built HTML, like any analytics ID. Every account has a free allowance of 1,000,000 tokens a month; the dialog shows a plain message when it is used up.
 
 ## Build
 

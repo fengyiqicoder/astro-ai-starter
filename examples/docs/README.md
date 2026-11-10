@@ -24,7 +24,7 @@ npm create astro@latest my-docs -- --template fengyiqicoder/astro-ai-docs
 cd my-docs && npm install && npm run dev
 ```
 
-Then get a free key. Either at [onetagai.com](https://onetagai.com/?ref=astro-ai-docs), or without leaving the terminal (the key arrives in that inbox; one key per email):
+It answers on localhost right away, on a shared demo key. Before you deploy, get your own free key. Either at [onetagai.com](https://onetagai.com/?ref=astro-ai-docs), or without leaving the terminal (the key arrives in that inbox; one key per email):
 
 ```bash
 curl -X POST https://onetagai.com/api/signup -H "Content-Type: application/json" -d '{"email":"you@example.com"}'
@@ -36,7 +36,7 @@ Put it in `.env`:
 PUBLIC_ONETAG_KEY=ot_your_key_here
 ```
 
-If an AI coding tool is setting this up for you, it can run that request with your email and ask you to paste the key from your inbox. Without a key the site works as a normal Starlight site; the Ask AI dialog just says it is not set up yet. This key is designed to be public, like an analytics ID: it can only spend that account's allowance of 1,000,000 free tokens.
+If an AI coding tool is setting this up for you, it can run that request with your email and ask you to paste the key from your inbox. Without a key a deployed site works as a normal Starlight site; the Ask AI dialog just says it is not set up yet. This key is designed to be public, like an analytics ID: it can only spend that account's allowance of 1,000,000 free tokens a month.
 
 ## Deploy
 
@@ -48,10 +48,9 @@ Full docs, written as the demo content: [Getting started](https://fengyiqicoder.
 ## Project layout
 
 ```
-src/components/Search.astro   the Ask AI button, dialog, retrieval and the call to onetag.ask
 src/content/docs/             your pages (Markdown / MDX)
 src/styles/custom.css         four accent colors
-astro.config.mjs              title, logo, sidebar, the Search override, llms.txt plugin
+astro.config.mjs              title, logo, sidebar, the Ask AI plugin (starlight-onetag), llms.txt plugin
 .github/workflows/deploy.yml  GitHub Pages
 ```
 
