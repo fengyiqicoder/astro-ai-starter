@@ -24,7 +24,7 @@ cd my-landing-page && npm install && npm run dev
 ```
 
 1. Edit `src/data/site.ts`: name, tagline, features, prices, FAQ. The AI reads the rendered page, so specific copy (numbers, limits, names) gives specific answers.
-2. Get a free key. Either at [onetagai.com](https://onetagai.com/?ref=astro-ai-landing), or without leaving the terminal (the key arrives in that inbox; one key per email):
+2. Get a free key before you deploy (on localhost both features answer right away, on a shared demo key). Either at [onetagai.com](https://onetagai.com/?ref=astro-ai-landing), or without leaving the terminal (the key arrives in that inbox; one key per email):
 
 ```bash
 curl -X POST https://onetagai.com/api/signup -H "Content-Type: application/json" -d '{"email":"you@example.com"}'
@@ -36,7 +36,7 @@ An AI coding tool can run that request with your email and ask you to paste the 
 PUBLIC_ONETAG_KEY=ot_your_key_here
 ```
 
-Without a key the page works as a normal landing page; the two AI features show a short "not set up" message. This key is designed to be public, like an analytics ID: it can only spend that account's allowance of 1,000,000 free tokens.
+Without a key a deployed page works as a normal landing page; the two AI features show a short "not set up" message. This key is designed to be public, like an analytics ID: it can only spend that account's allowance of 1,000,000 free tokens a month.
 
 3. Point the email form at your form service: `contact.endpoint` in `site.ts`.
 

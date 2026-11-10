@@ -9,9 +9,19 @@ declare global {
 
 let loading: Promise<NonNullable<Window['onetag']>> | null = null;
 
-export function hasKey(): boolean {
+// The shared demo key. It answers on localhost only by this file's choice, so the AI features work
+// right after `npm run dev`. Its small daily budget is shared by everyone: a deployed site needs its own key.
+const DEMO_KEY = 'ot_demo000000000000000000000';
+const isLocal = () => /^(|localhost|127\.0\.0\.1|\[::1\]|.+\.localhost)$/.test(location.hostname);
+
+function ownKey(): string {
 	const key = document.documentElement.dataset.onetagKey || '';
-	return key.length > 0 && !/^YOUR_/i.test(key);
+	return key.length > 0 && !/^YOUR_/i.test(key) ? key : '';
+}
+
+// True when the AI features can answer: the site has its own key, or this is localhost.
+export function hasKey(): boolean {
+	return ownKey() !== '' || isLocal();
 }
 
 export function loadOnetag(): Promise<NonNullable<Window['onetag']>> {
@@ -22,7 +32,10 @@ export function loadOnetag(): Promise<NonNullable<Window['onetag']>> {
 	loading = new Promise((resolve, reject) => {
 		const s = document.createElement('script');
 		s.src = (root.onetagSite || 'https://onetagai.com') + '/v1.js';
-		s.dataset.key = root.onetagKey || '';
+		s.dataset.key = ownKey() || DEMO_KEY;
+		// Names this template in OneTag AI's usage counts. Not sent anywhere else.
+		s.dataset.via = 'astro-ai-starter';
+		if (!ownKey()) console.info('[astro-ai-starter] No OneTag AI key set: using the shared demo key, which this template only uses on localhost. Put your own free key in .env as PUBLIC_ONETAG_KEY before you deploy.');
 		s.onload = () => (window.onetag ? resolve(window.onetag) : reject(new Error('sdk_missing')));
 		s.onerror = () => reject(new Error('network'));
 		document.head.appendChild(s);

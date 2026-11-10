@@ -9,6 +9,11 @@ declare global {
 
 let loading: Promise<any> | null = null;
 
+// The shared demo key. This file only uses it on localhost, so both AI features work right after
+// `npm run dev`. Its small daily budget is shared by everyone: a deployed site needs its own key.
+const DEMO_KEY = 'ot_demo000000000000000000000';
+const isLocal = () => /^(|localhost|127\.0\.0\.1|\[::1\]|.+\.localhost)$/.test(location.hostname);
+
 export function loadOneTag(): Promise<any> {
 	if (window.onetag) return Promise.resolve(window.onetag);
 	if (loading) return loading;
@@ -16,7 +21,11 @@ export function loadOneTag(): Promise<any> {
 	loading = new Promise((resolve, reject) => {
 		const s = document.createElement('script');
 		s.src = (cfg.onetagSite || 'https://onetagai.com') + '/v1.js';
-		s.dataset.key = cfg.onetagKey || '';
+		const own = cfg.onetagKey && !/^YOUR_/i.test(cfg.onetagKey) ? cfg.onetagKey : '';
+		s.dataset.key = own || (isLocal() ? DEMO_KEY : '');
+		// Names this template in OneTag AI's usage counts. Not sent anywhere else.
+		s.dataset.via = 'astro-ai-landing';
+		if (!own && isLocal()) console.info('[astro-ai-landing] No OneTag AI key set: using the shared demo key, which this template only uses on localhost. Put your own free key in .env as PUBLIC_ONETAG_KEY before you deploy.');
 		s.onload = () => resolve(window.onetag);
 		s.onerror = () => reject(Object.assign(new Error('Could not load the AI script.'), { code: 'network' }));
 		document.head.append(s);

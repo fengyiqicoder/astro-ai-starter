@@ -33,7 +33,7 @@ AI for your readers (each one degrades to a normal blog when no key is set):
 - 📣 **Share draft**: a post for X, a thread and a LinkedIn version, in the author's voice
 - 🧪 **Test yourself**: three questions written from the post (opt-in per post)
 - 🎯 **Reader fit** on the home page: say what you work on, get three posts
-- 🔑 One public key, free 1,000,000 tokens, nothing stored, no API key in the page. Powered by [OneTag AI](https://onetagai.com/?ref=astro-ai-starter)
+- 🔑 One public key, 1,000,000 free tokens a month, nothing stored, no API key in the page. Powered by [OneTag AI](https://onetagai.com/?ref=astro-ai-starter)
 
 AI for you while writing:
 
@@ -79,7 +79,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:4321. Then get a free key and put it in `.env`:
+Open http://localhost:4321. The AI buttons answer right away on localhost, on a shared demo key. Before you deploy, get your own free key and put it in `.env`:
 
 ```sh
 curl -X POST https://onetagai.com/api/signup -H "Content-Type: application/json" -d '{"email":"you@example.com"}'
@@ -89,7 +89,7 @@ echo 'PUBLIC_ONETAG_KEY=ot_...' > .env
 
 This key is designed to be public: it ends up in the HTML like an analytics ID and can only spend your account's allowance. On GitHub Pages, add it as the `ONETAG_KEY` Actions secret.
 
-Need more than the free 1,000,000 tokens? [OneTag Pro](https://onetagai.com/?ref=astro-ai-starter#pricing) is $9.9/month for 100,000,000 tokens and lets you lock the key to your domain.
+Need more than the free 1,000,000 tokens a month? [OneTag Pro](https://onetagai.com/?ref=astro-ai-starter#pricing) is $9.9/month for 100,000,000 tokens and lets you lock the key to your domain.
 
 ## Blog, docs and landing page
 
