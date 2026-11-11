@@ -15,6 +15,7 @@ A reader types a question. The site searches its own pages with the [Pagefind](h
 - Works in any language the reader asks in.
 - Loads the AI script only when the dialog opens, so page speed is untouched.
 - `llms.txt` generated on every build for AI coding tools and search engines.
+- More AI for readers, each one optional: an AI answer inside search, **Read in your language** page translation, **Explain this code** under code blocks, **Summarize this page**, and ask-about-a-selection. All from [starlight-onetag](https://github.com/fengyiqicoder/starlight-onetag).
 - Everything else is standard [Starlight](https://starlight.astro.build): sidebar, search, dark mode, i18n.
 
 ## Use it
