@@ -19,7 +19,7 @@ Under the post, **Read next** picks three other posts that follow on from this o
 
 ## How it works without a server
 
-Each feature is a call to `onetag.ask(prompt, input)` from the browser. The page sends the post text and a prompt to OneTag AI with a public key, and streams the answer back. The key can only spend this site's free allowance (1,000,000 tokens a month), so it is safe to ship in the HTML, like an analytics ID.
+Each feature is a call to `onetag.ask(prompt, input)` from the browser. The page sends the post text and a prompt to OneTag AI with a public key, and streams the answer back. The key can only spend this site's free allowance (1,000,000 tokens, one time, no monthly reset), so it is safe to ship in the HTML, like an analytics ID.
 
 ```html
 <script src="https://onetagai.com/v1.js" data-key="YOUR_ONETAG_KEY"></script>

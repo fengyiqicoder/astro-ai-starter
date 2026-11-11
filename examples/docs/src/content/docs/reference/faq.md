@@ -5,7 +5,7 @@ description: Short answers to the questions people ask about Astro AI Docs and A
 
 ## Is it free?
 
-The template is MIT licensed. OneTag AI gives every account 1,000,000 tokens a month for free; a question that reads five pages costs roughly 5,000 to 8,000 tokens, so that is around 150 questions a month. A paid plan with a larger allowance exists for busier sites.
+The template is MIT licensed. OneTag AI gives every account 1,000,000 free tokens, one time, no monthly reset; a question that reads five pages costs roughly 5,000 to 8,000 tokens, so that is around 150 questions a month. A paid plan with a larger allowance exists for busier sites.
 
 ## Does it work without a key?
 
